@@ -8,10 +8,8 @@ export const CounterAdapter = createEntityAdapter<CounterModel>({
 
 export interface CounterState extends EntityState<CounterModel> {
     id: string | null;
-    value: number;
 }
 
 export const initialCounterState: CounterState = CounterAdapter.getInitialState({
-    id: 'count',
-    value: 0
+    id: 'count'
 });
