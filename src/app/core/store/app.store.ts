@@ -9,10 +9,12 @@ import { counterReducer } from '../counter/counter.reducer';
 
 export interface AppState {
   IMenu: MenuState;
+  ICounter: CounterState;
 }
 
-export const appReducer: ActionReducerMap<AppState> = {
-  IMenu: menuReducer
-};
+export const appReducer: ActionReducerMap<any> = {
+  IMenu: menuReducer,
+  ICounter: counterReducer
+}
 
 export const metaReducers: MetaReducer<AppState>[] = [storeFreeze];

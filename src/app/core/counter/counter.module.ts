@@ -1,13 +1,9 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { StoreModule } from '@ngrx/store';
-import { counterReducer } from './counter.reducer';
+import { CounterService } from './counter.service';
 
 @NgModule({
   declarations: [],
-  imports: [
-    CommonModule,
-    StoreModule.forRoot({ count: counterReducer })
-  ]
+  imports: [],
+  providers: [CounterService]
 })
-export class CounterModule { }
+export class CounterModule {}

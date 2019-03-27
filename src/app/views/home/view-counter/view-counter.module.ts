@@ -6,6 +6,6 @@ import { ViewCounterComponent } from './view-counter.component';
   declarations: [ViewCounterComponent],
   imports: [CommonModule],
   exports: [ViewCounterComponent],
-  entryComponents: [ViewCounterComponent]
+  entryComponents: []
 })
 export class ViewCounterModule { }

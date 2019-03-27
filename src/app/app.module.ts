@@ -14,6 +14,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { MenuPipe } from './common/pipe/menu.pipe';
 import { NavigationComponent } from './layout/navigation/navigation.component';
 import {ErrorsModule} from './views/errors/errors.module';
+import {CoreModule} from './core/core.module';
+
 
 @NgModule({
   declarations: [
@@ -26,6 +28,7 @@ import {ErrorsModule} from './views/errors/errors.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    CoreModule,
     HomeModule,
     ErrorsModule,
     HttpClientModule,
