@@ -3,7 +3,7 @@ import { Menu } from './menu.model';
 
 export type menuActions = MenuAddOne;
 
-export enum menuActionTypes { ADD_ONE = '[Menu] AddOne'}
+export enum menuActionTypes { ADD_ONE = '[Menu] Add'}
 
 export class MenuAddOne implements Action {
     readonly type = menuActionTypes.ADD_ONE;
