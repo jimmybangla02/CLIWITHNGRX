@@ -16,9 +16,6 @@ export class ViewCounterComponent implements OnInit {
 
   constructor(private countService: CounterService, private store: Store<AppState>) {
     this.count$ = this.store.pipe(select(getCount()));
-    // this.store.pipe(select(getCount())).subscribe(r =>{
-    //   console.log(r);
-    // })
   }
 
   ngOnInit() {
