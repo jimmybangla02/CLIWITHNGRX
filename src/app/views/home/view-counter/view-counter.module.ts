@@ -4,8 +4,8 @@ import { ViewCounterComponent } from './view-counter.component';
 
 @NgModule({
   declarations: [ViewCounterComponent],
-  imports: [
-    CommonModule
-  ]
+  imports: [CommonModule],
+  exports: [ViewCounterComponent],
+  entryComponents: [ViewCounterComponent]
 })
 export class ViewCounterModule { }
