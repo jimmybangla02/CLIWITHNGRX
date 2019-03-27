@@ -1,15 +1,18 @@
 
 import { ActionReducerMap, MetaReducer } from '@ngrx/store';
 import { storeFreeze } from 'ngrx-store-freeze';
-import { MenuState } from './menu.store';
-import { menuReducer } from '../reducers/menu-reducer';
+import {menuReducer} from '../menu/menu.reducer';
+import {MenuState} from '../menu/menu.store';
+
+import { CounterState } from '../counter/counter.store';
+import { counterReducer } from '../counter/counter.reducer';
 
 export interface AppState {
   IMenu: MenuState;
 }
 
 export const appReducer: ActionReducerMap<AppState> = {
-  IMenu: menuReducer,
+  IMenu: menuReducer
 };
 
 export const metaReducers: MetaReducer<AppState>[] = [storeFreeze];

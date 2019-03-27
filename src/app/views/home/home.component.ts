@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { MenuService } from '../../core/services/menu.service';
 import { select, Store} from '@ngrx/store';
-import { getMenuById } from '../../core/selectors/menu.selector';
 import { AppState } from '../../core/store/app.store';
+import { MenuService } from '../../core/menu/menu.service';
+import { getMenuById } from '../../core/menu/menu.selector';
 
 @Component({
   selector: 'app-home',

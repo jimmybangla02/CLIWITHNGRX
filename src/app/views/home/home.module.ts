@@ -1,14 +1,15 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HomeComponent } from './home.component';
-import { MenuService } from '../../core/services/menu.service';
+import { MenuModule } from '../../core/menu/menu.module';
 
 @NgModule({
   declarations: [HomeComponent],
   imports: [
-    CommonModule
+    CommonModule,
+    MenuModule
   ],
   exports: [HomeComponent],
-  providers: [MenuService]
+  providers: []
 })
 export class HomeModule { }
