@@ -13,8 +13,7 @@ import { appReducer, metaReducers } from './core/store/app.store';
 import { HttpClientModule } from '@angular/common/http';
 import { MenuPipe } from './common/pipe/menu.pipe';
 import { NavigationComponent } from './layout/navigation/navigation.component';
-import {ErrorsModule} from './views/errors/errors.module';
-import {CoreModule} from './core/core.module';
+import { ErrorsModule } from './views/errors/errors.module';
 
 
 @NgModule({
@@ -28,7 +27,6 @@ import {CoreModule} from './core/core.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    CoreModule,
     HomeModule,
     ErrorsModule,
     HttpClientModule,
