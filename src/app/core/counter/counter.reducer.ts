@@ -1,6 +1,7 @@
 import { Action } from '@ngrx/store';
 import { counterActionTypes } from './counter.action';
 import { initialCounterState} from './counter.store';
+
 export function counterReducer(state = initialCounterState, action: Action) {
     switch (action.type) {
         case counterActionTypes.Increment:
