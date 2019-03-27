@@ -11,7 +11,7 @@ import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { StoreModule } from '@ngrx/store';
 import { appReducer, metaReducers } from './core/store/app.store';
 import { HttpClientModule } from '@angular/common/http';
-import { MenuPipe } from './commons/pipe/menu.pipe';
+import { MenuPipe } from './common/pipe/menu.pipe';
 import { NavigationComponent } from './layout/navigation/navigation.component';
 
 @NgModule({
