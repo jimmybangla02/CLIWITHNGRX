@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { Error500Component } from './error500.component';
+import { NoResultsComponent } from './no-results.component';
 
 @NgModule({
-  declarations: [Error500Component],
+  declarations: [NoResultsComponent],
   imports: [
     CommonModule
   ]
 })
-export class Error500Module { }
+export class NoResultsModule { }

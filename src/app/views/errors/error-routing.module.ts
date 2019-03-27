@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { Error404Component } from './error404/error404.component';
+import { NoResultsComponent } from './no-results/no-results.component';
 
 const routes: Routes = [
-    { path: '404', component: Error404Component },
+    { path: '***', component: NoResultsComponent },
 ];
 
 @NgModule({
