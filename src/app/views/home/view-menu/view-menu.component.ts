@@ -11,10 +11,12 @@ import { getMenuById } from '../../../core/menu/menu.selector';
 export class ViewMenuComponent implements OnInit {
 
   constructor(private store: Store<AppState>) { }
+  viewMenu: string = 'view-menu works!';
 
   ngOnInit() {
     this.store.pipe(select(getMenuById('Menu'))).subscribe(m => {
       if (m) {
+        this.viewMenu = m.name[0];
         console.log(m, 'get menu from store');
       }
     });
