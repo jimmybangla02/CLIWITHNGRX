@@ -13,20 +13,22 @@ import { StoreModule } from '@ngrx/store';
 import { appReducer, metaReducers } from './core/store/app.store';
 import { HttpClientModule } from '@angular/common/http';
 import { MenuPipe } from './common/pipe/menu.pipe';
-import { NavigationComponent } from './layout/navigation/navigation.component';
 import { ErrorsModule } from './views/errors/errors.module';
+import { HeaderModule } from './layout/header/header.module';
+import { FooterModule } from './layout/footer/footer.module';
+import { NavigationModule } from './layout/navigation/navigation.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent,
-    FooterComponent,
     MenuPipe,
-    NavigationComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HeaderModule,
+    FooterModule,
+    NavigationModule,
     HomeModule,
     ErrorsModule,
     HttpClientModule,
