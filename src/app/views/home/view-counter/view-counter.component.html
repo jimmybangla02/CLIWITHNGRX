@@ -1,4 +1,6 @@
-<button (click)="increment()">Increment</button>
-<button (click)="decrement()">Decrement</button>
-<button (click)="reset()">Reset Counter</button>
-<div>Current Count: {{ count$ | async }}</div>
+<button mat-raised-button class="mx-1" color="primary" (click)="increment()">Increment</button>
+<button mat-raised-button class="mx-1" color="accent" (click)="decrement()">Decrement</button>
+<button mat-raised-button class="mx-1" color="warn" (click)="reset()">Reset</button>
+<button mat-raised-button class="mx-1">Count = {{ count$ | async }}</button>
+
+

@@ -1,2 +1,24 @@
-<app-view-menu></app-view-menu>
-<app-view-counter></app-view-counter>
+<mat-accordion>
+    <mat-expansion-panel>
+        <mat-expansion-panel-header>
+            <mat-panel-title>
+                Menus
+            </mat-panel-title>
+            <mat-panel-description>
+                Display menus from ngrx store
+            </mat-panel-description>
+        </mat-expansion-panel-header>
+        <app-view-menu></app-view-menu>
+    </mat-expansion-panel>
+    <mat-expansion-panel>
+        <mat-expansion-panel-header>
+            <mat-panel-title>
+                Counter
+            </mat-panel-title>
+            <mat-panel-description>
+                Update store counts
+            </mat-panel-description>
+        </mat-expansion-panel-header>
+        <app-view-counter></app-view-counter>
+    </mat-expansion-panel>
+</mat-accordion>

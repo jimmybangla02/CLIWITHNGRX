@@ -1,5 +1,5 @@
-<ul>
-    <li *ngFor="let vm of viewMenu">
-        {{ vm }}
-    </li>
-</ul>
+<mat-nav-list>
+    <mat-list-item *ngFor="let vm of viewMenu">
+        <a matLine>{{ vm }}</a>
+    </mat-list-item>
+</mat-nav-list>

@@ -1,4 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -15,7 +16,6 @@ import { MenuPipe } from './common/pipe/menu.pipe';
 import { NavigationComponent } from './layout/navigation/navigation.component';
 import { ErrorsModule } from './views/errors/errors.module';
 
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,6 +30,7 @@ import { ErrorsModule } from './views/errors/errors.module';
     HomeModule,
     ErrorsModule,
     HttpClientModule,
+    BrowserAnimationsModule,
     StoreModule.forRoot(appReducer, { metaReducers }),
     StoreDevtoolsModule.instrument({
       maxAge: 25,
