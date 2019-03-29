@@ -9,7 +9,7 @@ import { MenuService } from '../../core/menu/menu.service';
 export class HomeComponent implements OnInit {
 
   constructor(private menuService: MenuService) {
-    this.menuService.getMenus('Menu');
+    this.menuService.getMenus('sn');
   }
 
   ngOnInit() { }

@@ -1,13 +1,13 @@
 import { Action } from '@ngrx/store';
-import { Menu } from './menu.model';
+import { MainMenu } from './menu.model';
 
-export type menuActions = MenuAddOne;
+export type menuActions = GetMenu;
 
-export enum menuActionTypes { ADD_ONE = '[Menu] Add'}
+export enum menuActionTypes { GET_MENU = '[Menu] GetMenu'}
 
-export class MenuAddOne implements Action {
-    readonly type = menuActionTypes.ADD_ONE;
-    constructor(public payload: Menu) {
+export class GetMenu implements Action {
+    readonly type = menuActionTypes.GET_MENU;
+        constructor(public payload: MainMenu) {
     }
 }
 

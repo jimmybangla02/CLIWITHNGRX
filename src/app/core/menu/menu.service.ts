@@ -1,9 +1,9 @@
 import { Injectable, OnInit} from '@angular/core';
 import { APIService } from '../api/api.service';
-import { Menu } from './menu.model';
-import { MenuAddOne} from './menu.action';
+import { MainMenu, Menu } from './menu.model';
 import { Store} from '@ngrx/store';
 import { AppState } from '../store/app.store';
+import { GetMenu } from './menu.action';
 
 @Injectable({
     providedIn: 'root'
@@ -15,13 +15,13 @@ export class MenuService implements OnInit {
     }
 
     ngOnInit() {
-        this.getMenus('Menu');
+        this.getMenus('sn');
     }
 
     getMenus(id: string): void {
-        this.api.get({path: '/assets/fake-data/get.json'}).subscribe((s: Menu) => {
-            s.id = id;
-            this.store.dispatch(new MenuAddOne(s));
+        this.api.get({path: '/assets/fake-data/get.json'}).subscribe((s: Menu[]) => {
+            const res: MainMenu = { id, menu: s };
+            this.store.dispatch(new GetMenu(res));
         });
     }
 }

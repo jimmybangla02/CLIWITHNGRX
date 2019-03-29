@@ -11,6 +11,7 @@ export class CounterService implements OnInit {
   constructor(private store: Store<AppState>) {
 
   }
+
   ngOnInit() {
     this.reset();
   }

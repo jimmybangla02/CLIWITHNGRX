@@ -1,4 +1,4 @@
-import { initialMenuState, MenuState, MenuAdapter } from './menu.store';
+import { initialMenuState, MenuState } from './menu.store';
 import { menuActions, menuActionTypes } from './menu.action';
 
 export function menuReducer(
@@ -6,8 +6,8 @@ export function menuReducer(
     action: menuActions,
 ): MenuState {
     switch (action.type) {
-        case menuActionTypes.ADD_ONE:
-            return MenuAdapter.addOne(action.payload, state);
+        case menuActionTypes.GET_MENU:
+            return state = action.payload;
         default:
             return state;
     }
