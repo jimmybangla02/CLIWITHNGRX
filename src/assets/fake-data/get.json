@@ -1,3 +1,7 @@
 {
-  "name": ["Menu1","Menu2"]
+  "name": [
+    {"viewValue": "Steak"},
+    {"viewValue": "Pizza"},
+    {"viewValue": "Tacos"}
+  ]
 }
