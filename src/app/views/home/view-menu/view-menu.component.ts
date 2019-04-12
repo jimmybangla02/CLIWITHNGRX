@@ -11,7 +11,6 @@ import { Menu } from '../../../core/menu/menu.model';
 })
 export class ViewMenuComponent implements OnInit {
 
-
   @Input('className') set className(val) {
     console.log(val, 'get class name');
     Object.keys(val).forEach(k => {
@@ -19,7 +18,7 @@ export class ViewMenuComponent implements OnInit {
     });
   }
 
-  @HostBinding('class') class = this.className;
+  @HostBinding('class') class;
 
   constructor(private store: Store<AppState>) { }
 
