@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { select, Store } from '@ngrx/store';
-import { AppState } from '../../core/store/app.store';
-import { getMenus } from '../../core/menu/menu.selector';
-import { Menu } from '../../core/menu/menu.model';
+import { AppState } from '../../../core/store/app.store';
+import { getMenus } from '../../../core/menu/menu.selector';
+import { Menu } from '../../../core/menu/menu.model';
 
 @Component({
   selector: 'app-product-details',

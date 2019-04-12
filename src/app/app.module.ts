@@ -17,7 +17,7 @@ import { ErrorsModule } from './views/errors/errors.module';
 import { HeaderModule } from './layout/header/header.module';
 import { FooterModule } from './layout/footer/footer.module';
 import { NavigationModule } from './layout/navigation/navigation.module';
-import { ProductDetailsModule } from './views/product-details/product-details.module';
+import { ProductDetailsModule } from './views/home/product-details/product-details.module';
 
 @NgModule({
   declarations: [

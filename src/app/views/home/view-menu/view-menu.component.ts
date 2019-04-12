@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, HostBinding, Input, OnInit} from '@angular/core';
 import { select, Store } from '@ngrx/store';
 import { AppState } from '../../../core/store/app.store';
 import { getMenus } from '../../../core/menu/menu.selector';
@@ -10,6 +10,16 @@ import { Menu } from '../../../core/menu/menu.model';
   styleUrls: ['./view-menu.component.sass']
 })
 export class ViewMenuComponent implements OnInit {
+
+
+  @Input('className') set className(val) {
+    console.log(val, 'get class name');
+    Object.keys(val).forEach(k => {
+      this.class = val[k];
+    });
+  }
+
+  @HostBinding('class') class = this.className;
 
   constructor(private store: Store<AppState>) { }
 
